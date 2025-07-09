@@ -14,7 +14,7 @@ function Links() {
           sx={{ borderRadius: "2rem", p: ".4rem" }}
           fontSize="large"
         />
-        <Link to={"/"}>
+        <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
           <MuiLinks
             component={"p"}
             color="inherit"
@@ -32,7 +32,10 @@ function Links() {
           sx={{ borderRadius: "2rem", p: ".4rem" }}
           fontSize="large"
         />
-        <Link to={"/Destinations"}>
+        <Link
+          to={"/Destinations"}
+          style={{ textDecoration: "none", color: "black" }}
+        >
           <MuiLinks
             component={"p"}
             color="inherit"
@@ -49,7 +52,10 @@ function Links() {
           sx={{ borderRadius: "2rem", p: ".4rem" }}
           fontSize="large"
         />
-        <Link to={"/trip-types"}>
+        <Link
+          to={"/trip-types"}
+          style={{ textDecoration: "none", color: "black" }}
+        >
           <MuiLinks
             component={"p"}
             color="inherit"
@@ -66,7 +72,10 @@ function Links() {
           sx={{ borderRadius: "2rem", p: ".4rem" }}
           fontSize="large"
         />
-        <Link to={"/contact-us"}>
+        <Link
+          to={"/contact-us"}
+          style={{ textDecoration: "none", color: "black" }}
+        >
           <MuiLinks
             component={"p"}
             color="inherit"
