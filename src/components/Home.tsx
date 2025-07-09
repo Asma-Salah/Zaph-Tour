@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import HeroSection from "./HeroSection";
 import AboutUs from "./AboutUs";
 import FeatureDestination from "./FeatureDestination";

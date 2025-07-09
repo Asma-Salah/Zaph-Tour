@@ -3,18 +3,19 @@ import Avatar from "@mui/material/Avatar";
 
 function Testimonials() {
   return (
-    <Box>
+    <Box justifyContent={"center"} alignItems={"center"}>
       <Typography variant="h4" textAlign={"center"} fontWeight={900} mt={5}>
         Testimonials
       </Typography>
       <Grid
         container
         direction="row"
+        columns={3}
         spacing={3}
         justifyContent={"center"}
         mt={"2rem"}
       >
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
+        <Grid size={{ xs: 3, md: 1, sm: 1.5 }} justifyContent={"center"}>
           <Card sx={{ maxWidth: "20rem", p: 2 }}>
             <Avatar
               alt="Remy Sharp"
@@ -32,7 +33,7 @@ function Testimonials() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid>
+        <Grid size={{ xs: 3, md: 1, sm: 1.5 }} justifyContent={"center"}>
           <Card sx={{ maxWidth: "20rem", p: 2 }}>
             <Avatar
               alt="Cindy Baker"
@@ -52,7 +53,7 @@ function Testimonials() {
           </Card>
         </Grid>
 
-        <Grid>
+        <Grid size={{ xs: 3, md: 1, sm: 1.5 }} justifyContent={"center"}>
           <Card sx={{ maxWidth: "20rem", p: 2 }}>
             <Avatar
               alt="Travis Howard"
