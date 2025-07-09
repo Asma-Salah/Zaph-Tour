@@ -1,4 +1,5 @@
-import { Link, Stack } from "@mui/material";
+import { Link as MuiLinks, Stack } from "@mui/material";
+import { Link } from "react-router-dom";
 
 import AddHomeIcon from "@mui/icons-material/AddHome";
 import AssistantDirectionIcon from "@mui/icons-material/AssistantDirection";
@@ -13,8 +14,15 @@ function Links() {
           sx={{ borderRadius: "2rem", p: ".4rem" }}
           fontSize="large"
         />
-        <Link href="/" color="inherit" underline="none" fontWeight={600}>
-          Home
+        <Link to={"/"}>
+          <MuiLinks
+            component={"p"}
+            color="inherit"
+            underline="none"
+            fontWeight={600}
+          >
+            Home
+          </MuiLinks>
         </Link>
       </Stack>
 
@@ -24,13 +32,15 @@ function Links() {
           sx={{ borderRadius: "2rem", p: ".4rem" }}
           fontSize="large"
         />
-        <Link
-          href="/Destinations"
-          color="inherit"
-          underline="none"
-          fontWeight={600}
-        >
-          Destinations
+        <Link to={"/Destinations"}>
+          <MuiLinks
+            component={"p"}
+            color="inherit"
+            underline="none"
+            fontWeight={600}
+          >
+            Destinations
+          </MuiLinks>
         </Link>
       </Stack>
       <Stack direction={"row"} alignItems={"center"}>
@@ -39,13 +49,15 @@ function Links() {
           sx={{ borderRadius: "2rem", p: ".4rem" }}
           fontSize="large"
         />
-        <Link
-          href="/trip-types"
-          color="inherit"
-          underline="none"
-          fontWeight={600}
-        >
-          Trip types
+        <Link to={"/trip-types"}>
+          <MuiLinks
+            component={"p"}
+            color="inherit"
+            underline="none"
+            fontWeight={600}
+          >
+            Trip types
+          </MuiLinks>
         </Link>
       </Stack>
       <Stack direction={"row"} alignItems={"center"}>
@@ -54,13 +66,15 @@ function Links() {
           sx={{ borderRadius: "2rem", p: ".4rem" }}
           fontSize="large"
         />
-        <Link
-          href="/contact-us"
-          color="inherit"
-          underline="none"
-          fontWeight={600}
-        >
-          Contact Us
+        <Link to={"/contact-us"}>
+          <MuiLinks
+            component={"p"}
+            color="inherit"
+            underline="none"
+            fontWeight={600}
+          >
+            Contact Us
+          </MuiLinks>
         </Link>
       </Stack>
     </>
