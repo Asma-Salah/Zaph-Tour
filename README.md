@@ -7,4 +7,4 @@ The website will include the following pages:
 - Home Page
 - Destination Page
 - Trip Types Page
-- Pontact Page
+- Contact Us Page

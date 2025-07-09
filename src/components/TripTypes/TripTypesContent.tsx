@@ -1,9 +1,7 @@
-import { Block } from "@mui/icons-material";
 import {
   Box,
   Container,
   Grid,
-  Stack,
   Card,
   CardMedia,
   Typography,
